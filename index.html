@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Writing</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <br />
+
+    <span class="topContainers" id="formContainer">
+      <form action="#" id="formSetTime" method="post">
+        Set a looping timer for:
+        <input type="number" min="1" id="inputSetTime" value="0" /> minutes
+      </form>
+    </span>
+    <span class="topContainers">
+      <span id="timer">00:00</span>
+    </span>
+    <span class="topContainers" id="pauseContainer">
+      <button
+        id="startButton"
+        onclick="startTimer(document.getElementById('inputSetTime').value*60)"
+      >
+        Start
+      </button>
+      <button id="pauseButton" onclick="stopTimer()">Pause</button>
+    </span>
+    <textarea
+      id="textArea"
+      cols="50"
+      rows="5"
+      oninput="countWords()"
+      style="border: 4px double #ff69b4"
+    ></textarea
+    ><br />
+    <div id="show">
+      <div id="ProgressBar">
+        <div id="Progress">
+          <div id="Bar"></div>
+        </div>
+        <br>
+        Set goal:<input type="number" min="1" id="goal" value="0" />
+      </div>
+    </div>
+    <div><p id="counter"></p></div>
+    <button id="countwords" onclick="turnOnCounter();">Hide WC</button><br />
+  </body>
+</html>

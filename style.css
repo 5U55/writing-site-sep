@@ -1,0 +1,91 @@
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+#textArea {
+  width: 80%;
+  height: 67vh;
+  padding: 20px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  resize: none;
+  display: inline-block;
+}
+button {
+  background: #faeb87;
+  background-image: linear-gradient(to bottom, #faeb87, #ff75f8);
+  border-radius: 60px;
+  box-shadow: 0px 1px 3px #d400d4;
+  border: none;
+  font-family: Georgia, serif;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+button:hover {
+  background: #d6b200;
+  background-image: linear-gradient(to top, #faeb87, #ff75f8);
+  text-decoration: none;
+  cursor: pointer;
+}
+#inputSetTime {
+  width: 40px;
+  display: inline-block;
+}
+
+#formSetTime {
+  display: inline-block;
+  margin: auto;
+}
+
+#Progress {
+  width: 80%;
+  background-color: HotPink;
+  margin: auto;
+}
+
+#Bar {
+  width: 1%;
+  height: 20px;
+  background-color: Gold;
+}
+
+body {
+  text-align: center;
+}
+
+.topContainers {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  margin-bottom: 10px;
+}
+#formContainer {
+  display: inline-block;
+  float: left;
+  margin-left: 10%;
+  text-align: left;
+}
+#pauseContainer {
+  display: inline-block;
+  margin-right: 10%;
+  float: right;
+  text-align: right;
+}
+
+#startButton,
+#pauseButton {
+  display: inline;
+}
+
+#pauseButton {
+  width: 100px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+#countwords {
+  width: 100px;
+}
